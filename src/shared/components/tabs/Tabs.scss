@@ -1,0 +1,53 @@
+@import "../../../styles/themes/default";
+
+.Tabs {
+  .Tab {
+    position: relative;
+  }
+
+  ul.tabs__list {
+    display: flex;
+
+    li {
+      list-style-type: none;
+      flex-grow: 1;
+      text-align: center;
+      margin:0;
+
+      &.active {
+        button {
+          color: var(--primary-text);
+          background-color: var(--primary);
+        }
+      }
+    }
+
+    button {
+      border-radius: var(--border-radius-default);
+      border: 0;
+      margin: 5px;
+      padding: 5px 10px;
+
+      color: var(--primary-default-text);
+      background-color: var(--primary-default-bg);
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-family: var(--font-family-title);
+    }
+  }
+
+
+  .tabs__content {
+    border-top: 1px solid var(--primary-default-text);
+    position: relative;
+    min-height: 200px;
+    padding: 10px;
+    background-color: var(--primary-default-bg);
+  }
+
+  .tabs__content-inner {
+    padding: 10px;
+  }
+}
+

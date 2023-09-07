@@ -1,0 +1,25 @@
+@import "styles/themes/default";
+@import "styles/base";
+
+.App {
+  background-color: var(--primary-default-bg, white);
+  color: var(--primary-default-text, black);
+  font-family: var(--font-family);
+
+  .by {
+    background-color: var(--primary-default-bg);
+    color: var(--primary-default-text);
+    display: block;
+    padding: 5px;
+    text-align: right;
+    font-size: var(--font-size-extra-small);
+  }
+
+  .btn-toggle-theme {
+    margin-right: 15px;
+    font-size: var(--font-size-extra-small);
+    background-color: var(--secondary);
+    color: var(--secondary-text);
+    border-color: var(--secondary-text);
+  }
+}

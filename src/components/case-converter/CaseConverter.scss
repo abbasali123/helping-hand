@@ -1,0 +1,35 @@
+@import "../../styles/themes/default";
+
+.CaseConverter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .buttons-container {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    flex-grow: 1;
+    border: 1px solid var(--primary-default-text);
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    display: block;
+    min-height: 50px;
+    resize: none;
+    font-family: var(--font-family-mono);
+  }
+
+  .btn-reset {
+    margin-right: 10px;
+  }
+
+  .hint {
+    font-size: var(--font-size-small);
+    display: inline-block;
+    font-style: italic;
+  }
+}
+

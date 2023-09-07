@@ -1,0 +1,51 @@
+.DatesAddAndSubtract {
+
+  input, select {
+    font-size: var(--font-size-default);
+    margin-bottom: var(--margin-default);
+  }
+
+  [name=start-date] {
+    display: block;
+    width: 100%;
+  }
+
+  .period-container {
+    border: 1px solid var(--primary-default-text);
+    border-radius: var(--border-radius-default);
+    display: flex;
+
+    input,select {
+      border:0;
+      //outline: 0;
+      background-color: transparent;
+    }
+
+    [name=amount] {
+      flex-grow: 1;
+      text-align: right;
+      margin:0;
+    }
+
+    [name=period-type] {
+      border-radius: 0;
+      border-left: 1px solid var(--primary-default-text);
+      margin:0;
+      flex-grow: 1;
+    }
+  }
+
+
+  .result {
+    margin-top: var(--margin-big);
+    text-align: center;
+  }
+
+  .result--text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--font-size-big);
+  }
+}
+
